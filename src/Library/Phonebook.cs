@@ -11,7 +11,10 @@ namespace Library
             this.Owner = owner;
             this.persons = new List<Contact>();
         }
-
+        public void  AddContact(Contact contact)
+        {
+            this.persons.Add(contact);
+        }
         public Contact Owner { get; }
 
         public List<Contact> Search(string[] names)

@@ -7,11 +7,16 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            // Crear el contacto dueño
+            Contact Jorge = new Contact("Jorge", "099123456","Jorge@email.com");
+            Contact Mario = new Contact("Mario", "099654321","Mario@email.com");
 
-            // Crear la lista de contactos
 
-            // Agregar contactos a la lista
+            Phonebook Contactos = new Phonebook(Jorge);   
+
+            Contactos.AddContact(Mario);
+            
+            
+
 
             // Enviar un correo a algunos contactos
 
