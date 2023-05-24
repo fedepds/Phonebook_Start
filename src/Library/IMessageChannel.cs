@@ -1,4 +1,4 @@
-namespace Library
+namespace PhoneBook
 {
     public interface IMessageChannel
     {

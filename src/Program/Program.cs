@@ -1,22 +1,21 @@
 ﻿using System;
-using Library;
+using WhatsAppApiUCU;
+using TwitterUCU;
 
-namespace Program
+namespace PhoneBook
 {
-    class Program
+    class Program 
     {
+
         static void Main(string[] args)
         {
-            Contact Jorge = new Contact("Jorge", "099123456","Jorge@email.com");
-            Contact Mario = new Contact("Mario", "099654321","Mario@email.com");
+            var whatsApp = new WhatsAppApi();
+            whatsApp.Send("+59897224555", "Que andas PAPA");
 
-
-            Phonebook Contactos = new Phonebook(Jorge);   
-
-            Contactos.AddContact(Mario);
+            var twitter = new TwitterImage();
+            Console.WriteLine(twitter.PublishToTwitter("Text", @"PathToImage.png"));
             
             
-
 
             // Enviar un correo a algunos contactos
 
