@@ -1,10 +1,10 @@
 namespace PhoneBook
 {
-<<<<<<< Updated upstream
-    public class Message 
-=======
+
+
+
     public class Message  : IMessageChannel
->>>>>>> Stashed changes
+
     {
         protected Message(string from, string to, string text)
         {
